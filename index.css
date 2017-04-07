@@ -1,0 +1,233 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: url(img/pattern.png);
+  background-size: 50%;
+  font-family: 'Quattrocento', sans-serif;
+}
+
+* {
+  font-family: 'Quattrocento', sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+p {
+  margin-bottom: 20px;
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+
+/*Nav Bar*/
+header {
+  background: #44D9E6;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+nav {
+  float: right; /* Desplazamos el nav hacia la derecha */
+}
+nav ul .logo{
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+nav ul li {
+  float: right;
+  font-family: 'Quattrocento', sans-serif;
+  font-size: 16px;
+}
+
+nav ul li:active {
+  text-decoration: none;
+}
+
+nav ul .logo{
+  float: left;
+  font-family: 'Quattrocento', sans-serif;
+  font-size: 16px;
+}
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 25px;
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background: #FF5C5C;
+}
+
+
+
+/*Carrusel*/
+.item{
+  font-size: 40px;
+  line-height: 50px
+}
+
+.item p{
+  font-size: 25px;
+  line-height: 40px
+}
+
+/*floating button*/
+aside{
+  position: fixed;
+  padding: 2%;
+  background: #44D9E6;
+  right: 5%;
+  bottom: 30px;
+  border-radius: 10px;
+  color: white;
+}
+aside input{
+  background: #44D9E6;
+  color: white;
+}
+
+/*Descripción*/
+/*.about{
+    background-image: url("img/pattern.png");
+    background-size: 100%;
+}
+
+.text-description{
+  padding: 60px 60px 40px 60px ;
+  background-color: #ffffff;
+
+.text-description p{
+  font-size: 2.7vw;
+  text-align: justify;
+  line-height: 120%;
+  width: 80%;
+  color: black;
+  }
+}*/
+
+.text-description{
+  padding: 60px 60px 40px 60px ;
+  margin: 30px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  filter: alpha(opacity=60);
+}
+
+.text-description p{
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: #000000;
+  text-align: justify;
+  line-height: 120%;
+  /*width: 80%*/
+}
+
+/*Dudas*/
+#dudas{
+clear: both;
+display: block;
+background: #FF5C5C;
+padding: 80px;
+color: #fff;
+}
+
+#dudas p{
+  position: absolute;
+  float: left;
+  font-size: 2.7vw;
+}
+
+.link{
+  float: right;
+  right: 17%;
+  font-size: 4vw;
+}
+
+.info{
+  padding-top: 10%;
+}
+
+.not-big{
+  font-size: 4vw;
+  padding: 0px
+}
+
+.fecha{
+  padding-top: 0px;
+  padding-left: 10%;
+  font-size: 8vw;
+  line-height: 120%;
+}
+
+.fecha span{
+  font-size: 6vw;
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+
+.month{
+  font-size: 8vw;
+}
+
+.text{
+  display: block;
+  float: right;
+  position: relative;
+  padding-right: 10%;
+}
+
+.Tec{
+  font-size: 6vw;
+}
+/*Footer*/
+footer {
+	clear: both;
+	background: #4d5061;
+	padding: 75px;
+	color: #fff;
+}
